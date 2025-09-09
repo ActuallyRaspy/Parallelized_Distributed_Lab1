@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
@@ -23,7 +24,6 @@ namespace Mandelbrot
         {
             Tuple<double, double> xRange = Tuple.Create(LowerX, UpperX);
             Tuple<double, double> yRange = Tuple.Create(LowerY, UpperY);
-
             // Parallelize the outer loop because it includes the inner loop as well
             Parallel.For(0, height, i =>
             {

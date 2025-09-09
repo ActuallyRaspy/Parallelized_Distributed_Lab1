@@ -150,7 +150,8 @@ namespace MeasurementApp.ViewModels
         private readonly MandelbrotBase[] availableMandelbrotAlgorithms = {
                 new MandelbrotSingleThread(2048, 2048),
                 new MandelbrotParallellized(2048, 2048),
-                new MandelbrotParallellizedTasks(2048, 2048)
+                new MandelbrotParallellizedTasks(2048, 2048),
+                new MandelbrotParallellizedLoadBalanced(2048, 2048)
                 // Add more here!
             };
         private double lowerX, upperX, lowerY, upperY;
