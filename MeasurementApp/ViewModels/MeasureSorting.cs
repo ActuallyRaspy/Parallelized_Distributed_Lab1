@@ -121,6 +121,7 @@ namespace MeasurementApp.ViewModels
                 new StandardSort<MyKeyValue<int, string>>(),
                 new SelectionSort<MyKeyValue<int, string>>(),
                 new MergeSort<MyKeyValue<int, string>>(),
+                new MergeSortParallellized<MyKeyValue<int, string>>(),
                 new ParallelPEESort<MyKeyValue<int, string>>(),
                 // Add more here!
             };
