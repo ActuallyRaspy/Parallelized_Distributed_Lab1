@@ -135,6 +135,7 @@ namespace MeasurementApp.ViewModels
                 new TopNSelectionSort<MyKeyValue<int, string>>(),
                 new TopNMergeSort<MyKeyValue<int, string>>(),
                 new TopNParallelPEESort<MyKeyValue<int, string>>(),
+                new TopNStandardSortParallellized<MyKeyValue<int, string>>(),
                 // Add more here!
             };
         private readonly string[] availableArrayPreparation = {

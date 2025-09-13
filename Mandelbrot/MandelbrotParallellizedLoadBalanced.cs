@@ -30,6 +30,7 @@ namespace Mandelbrot
             double stepy = (yRange.Item2 - yRange.Item1) / height;  
 
             int tileSize = 12; //Set the size for each tile. 12 seems to be the only one capable of hitting 0.14s
+
             BlockingCollection<(int, int)> tiles = new BlockingCollection<(int startX, int startY)>();
             //Initialize the collection for tiles. Each tile is denoted by its top-left pixel.
             // The keywords for this is that it is "thread-safe" and that it supports a "producer/consumer" model.
